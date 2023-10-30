@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="shortcut icon" href="img/logobeer.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+   <title>BreadConcept| Cervezas</title>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-inicio">
+      <div class="navdiv header-section container">
+        <a style="display: flex;" href="index.html"><img src="img/logobeer.png" alt="" height="70px"></a>
+        <div class="labeldiv">
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul class="lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mision.html">Misión</a></li>
+                <li><a class="activo" href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <img onclick="showCart(this)" class="cart" src="./img/productos/cart.png" alt="">
+            <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">Cerrar</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+            </div>
+            <h2>Total: $ <strong class="price-total">0</strong></h2>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    
+    <div class="fondo">
+      <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./img/productos/roja.png" alt="">
+                    <p>$ <span>800</span></p>
+                </div>
+                <p class="title">Cerveza Roja</p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="/img/productos/ipa.png" alt="">
+                   <p>$ <span>800</span></p>
+              </div>
+              <p class="title">Cerveza IPA</p>
+              <a href="" data-id="2" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./img/productos/lagger.png" alt="">
+                   <p>$ <span>800</span></p>
+              </div>
+              <p class="title">Cerveza Lagger</p>
+              <a href="" data-id="3" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./img/productos/stout.png" alt="">
+                   <p>$ <span>800</span></p>
+              </div>
+              <p class="title">Cerveza Stout</p>
+              <a href="" data-id="4" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./img/productos/pack.png" alt="">
+                   <p>$ <span>3000</span></p>
+              </div>
+              <p class="title">Pack Cervezas</p>
+              <a href="" data-id="5" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./img/productos/copon.png" alt="">
+                   <p>$ <span>2000</span></p>
+              </div>
+              <p class="title">Copon Cerveza</p>
+              <a href="" data-id="6" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./img/productos/vasocerv1.png" alt="">
+                   <p>$ <span>1500</span></p>
+              </div>
+              <p class="title">Vaso Cerveza</p>
+              <a href="" data-id="7" class="btn-add-cart">Agregar</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./img/productos/vasocerv2.png" alt="">
+                   <p>$ <span>1500</span></p>
+              </div>
+              <p class="title">Vaso Cerveza 2</p>
+              <a href="" data-id="8" class="btn-add-cart">Agregar</a>
+            </div>
+            
+      </section>
+    
+</div>
+    <footer>
+        <div >
+          <ul>
+            <ul>Mauro Sangalli</ul>
+            <ul>Pepito 1</ul>
+            <ul>Pepito 2</ul>
+            <ul>Pepito 3</ul>
+          </ul>
+        </div>
+        <div>
+          <a href="https://msangalli1.github.io/G7TeamRepo/">Link del equipo</a>
+        </div>
+        <div>
+          <p>Trabajo grupal.</p>
+        </div>
+        <div>
+          <p>Materia: Diseño y desarrollo web</p>
+        </div>
+        <div>
+          <img src="./img/logouade.png" alt="Logo UADE">
+        </div>
+    </footer>
+
+    <script>
+      function showCart(x){
+          document.getElementById("products-id").style.display = "block";
+      }
+      function closeBtn(){
+           document.getElementById("products-id").style.display = "none";
+      }
+
+  </script>
+  <script src="./custom.js" ></script>
+
+</body>
+
+</html>
