@@ -1,3 +1,22 @@
+#carouselExampleCaptions {
+        height: 55vh;
+        width: 100%; /* Ajusta la altura del carrusel al 20% del viewport */
+    }
+    
+    .carousel-item {
+        height: 100%; /* Establece la altura del contenido del carrusel al 100% */
+    }
+    
+    .carousel-inner {
+        height: 100%; /* Establece la altura del contenido del carrusel al 100% */
+    }
+    
+
+    
+
+   
+
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -73,6 +92,8 @@ body {
 .main-inicio {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .seccion-inicio {
@@ -432,6 +453,8 @@ label {
 }
 
 footer {
+    clear: both;
+    position: absolute;
     background-color: #FF9B50;
     height: 80px;
     width: 100%;

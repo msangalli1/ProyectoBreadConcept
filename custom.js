@@ -8,7 +8,7 @@ let amountProduct = document.querySelector('.count-product');
 let buyThings = [];
 let totalCard = 0;
 let countProduct = 0;
-
+const carousel = new bootstrap.Carousel('#myCarousel')
 //functions
 loadEventListenrs();
 function loadEventListenrs(){
