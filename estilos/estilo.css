@@ -164,8 +164,9 @@ input {
 }
 
 label {
-    display: none;
+    display: flex;
 }
+
 
 @media (max-width: 1130px) {
        
@@ -205,15 +206,6 @@ label {
         justify-content: end;
     }
 
-    .lista li {
-        text-align: right;
-        margin: 15px 0px;
-    }
-
-    .lista li a:hover {
-        background-color: #E25E3E !important;
-    }
-
     label {
         margin-left: auto;
         display: flex;
@@ -231,6 +223,17 @@ label {
         cursor: pointer;
         background-color: rgb(0, 0, 0);
     }
+
+    .lista li {
+        text-align: right;
+        margin: 15px 0px;
+    }
+
+    .lista li a:hover {
+        background-color: #E25E3E !important;
+    }
+
+    
 
     .seccion-inicio {
         padding: 10px 0px;
