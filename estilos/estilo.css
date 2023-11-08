@@ -1,4 +1,42 @@
-#carouselExampleCaptions {
+
+form {
+    margin: 20px;
+  }
+  .formulario{
+    background-color: #FF9B50; /* Cambia el color de fondo a tu preferencia */
+    padding: 20px; /* Añade espaciado interior al formulario si es necesario */
+    border-radius: 10px; /* Agrega esquinas redondeadas al formulario si lo deseas */
+    /* Otros estilos para el formulario */
+  }
+    
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .oferta{display: flex;}
+  
+  input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+   
+   #carouselExampleCaptions {
         height: 55vh;
         width: 100%; 
 
@@ -69,7 +107,29 @@ body {
     align-items: center;
 }
 .fondo {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondon.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+    margin: 0;
+    background-size: cover;
+    margin-bottom: opx;
+    justify-content: center;
+    align-items: center;
+}
+.fondo1 {
+    background-image: url(../img/fondon2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+    margin: 0;
+    background-size: cover;
+    margin-bottom: opx;
+    justify-content: center;
+    align-items: center;
+}
+.fondo2 {
+    background-image: url(../img/fondon3.jpg);
     height: 100vh;
     width: 100%;
     background-repeat: repeat;
