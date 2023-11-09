@@ -1,11 +1,13 @@
-
-  
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("subscription-form");
     const emailInput = document.getElementById("email");
     const confirmationMessage = document.getElementById("confirmation-message");
+    const errorContainer = document.getElementById("error-message"); // Elemento para mensajes de error
   
     form.addEventListener("submit", function (e) {
+      // Evita que el formulario se envíe por defecto
+      e.preventDefault();
+  
       // Obtén el valor del correo electrónico ingresado por el usuario
       const userEmail = emailInput.value;
   
@@ -14,14 +16,15 @@
   
       if (!emailRegex.test(userEmail)) {
         // El correo electrónico no coincide con el formato válido
-        e.preventDefault(); // Evita que se envíe el formulario
-        alert("Por favor, ingrese una dirección de correo electrónico válida.");
+        errorContainer.style.display = "block";
+        errorContainer.textContent = "Por favor, ingrese una dirección de correo electrónico válida.";
       } else {
         // El correo electrónico es válido, puedes realizar acciones adicionales aquí
-        // Muestra el mensaje de confirmación si el correo es válido
         confirmationMessage.style.display = "block";
         emailInput.value = "";
+        errorContainer.style.display = "none"; // Oculta el mensaje de error si estaba visible
       }
     });
   });
+  
   

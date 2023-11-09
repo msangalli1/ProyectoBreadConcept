@@ -78,14 +78,16 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </main>
+        
         <form id="subscription-form" class="formulario">
             <label for="email" class="oferta">Ingrese su email para recibir un código de descuento del 10%</label>
             <input type="email" id="email" name="email" required class="oferta">
-            <button type="button" id="subscribe-button">Enviar</button>
-          
-        
-          <!-- Agrega un mensaje para mostrar la confirmación de la suscripción -->
-          <p id="confirmation-message" style="display: none;">¡Gracias por suscribirte!</p>
+            <button type="submit" id="subscribe-button">Enviar</button>
+    
+            <p id="error-message" class="error-message" style="display: none;">Por favor, ingrese una dirección de correo electrónico válida.</p>
+    
+            <!-- Agrega un mensaje para mostrar la confirmación de la suscripción -->
+            <p id="confirmation-message" style="display: none;">!Enviado¡ Revise su bandeja de correo para recibir su código de promoción</p>
         </form>
           <script src="oferta.js"></script>
     </div>
