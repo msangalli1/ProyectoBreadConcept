@@ -148,7 +148,7 @@ body {
 }
 .fondo2 {
     background-image: url(../img/fondon3.jpg);
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-repeat: repeat;
     margin: 0;
@@ -247,6 +247,43 @@ label {
 
 .ocultar-div{
     display: none;
+}
+
+.img-mision {
+    max-width: 450px;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Un valor alto para garantizar que esté encima de otros elementos */
+    width: 100%;
+  }
+  .img-mision2 {
+    max-width: 450px;
+    position: absolute;
+    top: 1150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Un valor alto para garantizar que esté encima de otros elementos */
+    width: 100%;
+  }
+  
+  .seccion-mision {
+    padding-top: 300px; /* Agrega padding al inicio de la sección para compensar la imagen */
+  }
+  
+
+
+.seccion-mision {
+    margin: 0 auto;
+    background-color: #FF9B50;
+    height: auto;
+    width: 800px;
+    border-radius: 20px;
+    padding: 40px 80px;
+    overflow: auto;
+    height: auto;
+    display: block;
 }
 
 
