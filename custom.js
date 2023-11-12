@@ -25,6 +25,8 @@ function addProduct(e){
     }
 }
 
+
+
 function deleteProduct(e) {
     if (e.target.classList.contains('delete-product')) {
         const deleteId = e.target.getAttribute('data-id');
@@ -102,6 +104,9 @@ function loadHtml(){
         amountProduct.innerHTML = countProduct;
     });
 }
+
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
+
+ 
