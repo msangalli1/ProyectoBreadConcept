@@ -8,7 +8,7 @@ let amountProduct = document.querySelector('.count-product');
 let buyThings = [];
 let totalCard = 0;
 let countProduct = 0;
-const carousel = new bootstrap.Carousel('#myCarousel')
+
 //functions
 loadEventListenrs();
 function loadEventListenrs(){
@@ -89,12 +89,10 @@ function loadHtml(){
             <img src="${image}" alt="">
             <div class="item-content">
                 <h5>${title}</h5>
-                <h5 class="cart-price">$ ${price}</h5>
-                <h6>Cantidad: ${amount}</h6>
+                <h5 class="cart-price">${price}$</h5>
+                <h6>Amount: ${amount}</h6>
             </div>
-            <div>
-                <span class="delete-product" data-id="${id}">Eliminar</span>
-            </div>
+            <span class="delete-product" data-id="${id}">X</span>
         `;
 
         containerBuyCart.appendChild(row);
