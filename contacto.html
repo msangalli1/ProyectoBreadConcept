@@ -18,63 +18,72 @@
 </head>
 
 <body>
-    <nav class="nav-inicio">
-      <div class="navdiv">
+  <nav class="nav-inicio">
+    <div class="navdiv">
         <a style="display: flex;" href="index.html"><img src="img/logobeer.png" alt="" height="70px"></a>
         <div class="labeldiv">
             <input type="checkbox" id="menu">
             <label for="menu" class="ocultar-div"> ☰ </label>
             <ul class="lista">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a  href="index.html">Inicio</a></li>
                 <li><a href="mision.html">Misión</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a class="activo" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </div>
-    </nav>
-    <div class="fondo">
-
-    <main class="main-inicio">
-        <section class="seccion-inicio">
-            <div class="titulo">
-                <h1>Datos del equipo</h1>
-            </div>
-            <div class="datos-inicio">
-                <ul>
-                    <li><b>Equipo: </b>7</li>
-                    <li><b>Nombre del equipo: </b>BreadConcept</li>
-                    <li><b>Materia: </b>Diseño y desarrollo web</li>
-                    <li><b>Docente: </b>Litovicius Patricia Carina</li>
-                </ul>
-                <img src="img/pan-de-cerveza.jpg" alt="" height="250px">
-            </div>
-        </div>
-        </section>
-    </main>
-    <footer>
-      <div >
-        <ul>
-          <ul>Mauro Sangalli</ul>
-          <ul>Daniel Borini</ul>
-          <ul>Adrian Gomez</ul>  
-        </ul>
-      </div>
-      <div>
-        <a href="https://msangalli1.github.io/G7TeamRepo/">Sitio de grupo</a>
-      </div>
-      <div>
-        <a>Trabajo grupal.</a>
-      </div>
-      <div>
-        <a>Materia: Diseño y desarrollo web</a>
-      </div>
-      <div>
-        <img src="./img/logouade.png" alt="Logo UADE">
-      </div>
-  </footer>
+</nav>
+  
+  <div class="fondo">
     
-    <script src="codigo.js"></script>
+    <main class="main-inicio">
+      <div class="form-content">
+        <h2>Enviar formulario</h2>
+        <form action="https://formspree.io/f/mwkdjpbk" method="POST">
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email">
+
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject" id="subject">
+
+            <label for="coments">Mensaje</label>
+            <textarea type="text" name="coments" id="coments" rows="5"></textarea>
+
+            <input class="botonenv" type="submit" value="Enviar">
+
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div>
+      <ul>
+        <li>Mauro Sangalli</li>
+        <li>Daniel Borini</li>
+        <li>Adrian Gomez</li>  
+      </ul>
+    </div>
+    <div>
+      <a href="https://msangalli1.github.io/G7TeamRepo/">Sitio de grupo</a>
+    </div>
+    <div>
+      <p>Trabajo grupal</p>
+    </div>
+    <div>
+      <p>Materia: Diseño y desarrollo web</p>
+    </div>
+    <div>
+      <img src="./img/logouade.png" alt="Logo UADE">
+    </div>
+  </footer>
+  
+  <script src="codigo.js"></script>
+  
 </body>
 
 </html>

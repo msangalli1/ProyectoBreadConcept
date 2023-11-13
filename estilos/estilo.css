@@ -962,3 +962,83 @@ p.author a {
     /* Otros estilos específicos para dispositivos móviles */
     /* ... */
 }
+
+/*Estilos contacto*/
+.form-content {
+    background: linear-gradient(
+        50deg,
+        rgba(40, 42, 55, 1) 50%,
+        rgba(40, 42, 55, 0.7));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vw; /* Utilizar unidades relativas como vw (viewport width) para el padding */
+    max-width: 1000px;
+    margin-top: 200px; /* Ajustar los márgenes superior e inferior y centrar la caja horizontalmente */
+    margin-bottom: 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-content h2 {
+    color: #f4f6f9;
+    font-size: 4vw; /* Utilizar unidades relativas como vw para el tamaño del texto */
+    margin-bottom: 2.5vw; /* Utilizar unidades relativas para el margen */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-content label {
+    font-size: 17px;
+    color: #959AAB;
+    margin-bottom: 10px;
+}
+
+.form-content input,
+.form-content textarea {
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #f4f6f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+:focus{
+    outline: 1px solid #1E92E9;
+}
+
+.botonenv{
+    background-color: #1E92E9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.botonenv:hover{
+    background-color: #219BF9;
+}
+
+@media(max-width:991px){
+    .form-content{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+footer ul{
+      list-style-type: none; /* Esto elimina las viñetas/puntos en las listas */
+  padding: 0; /* Esto elimina el relleno predeterminado en los márgenes */
+}
