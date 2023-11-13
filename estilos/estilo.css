@@ -15,7 +15,30 @@
     background-color: #E25E3E; /* Cambia el color de fondo al pasar el ratón sobre el botón */
 }
 
+.item1 { grid-area: header; }
+.item2 { grid-area: productos; }
+.item3 {grid-area: carrito; }
+.item4 {grid-area: footer; }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'carrito carrito carrito productos productos productos'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#carrito.show {
+    display: block; /* O cualquier estilo que desees cuando el carrito está expandido */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
 form {
     margin: 20px;
@@ -771,6 +794,10 @@ footer div {
     font-weight: 600;
 }
 
+.card-img-top{
+
+
+}
 #img1 {
     background-image: url(../img/1.png);
 }
@@ -797,6 +824,8 @@ footer div {
     }
 
 .container{
+    width: 5px;
+    height: 5px;
     max-width: 1200px;
     text-align: center;
     margin: auto;
