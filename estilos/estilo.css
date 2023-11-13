@@ -15,6 +15,9 @@
     background-color: #E25E3E; /* Cambia el color de fondo al pasar el ratón sobre el botón */
 }
 
+.form-control{
+    display: inline-block;
+}
 
 .card-deck {
 
@@ -26,6 +29,10 @@
 .carro{
     color: white;
     display: flex;
+}
+
+.row{
+    color: white;
 }
 
 #carrito.show {
@@ -352,23 +359,6 @@ label {
         justify-content: end;
     }
 
-    label {
-        margin-left: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #E25E3E;
-        color: #E25E3E;
-        border-radius: 10px;
-        width: 50px;
-        height: 40px;
-        font-size: 25px;
-        line-height: 30px;
-        font-weight: 600;
-        user-select: none;
-        cursor: pointer;
-        background-color: rgb(0, 0, 0);
-    }
 
     .lista li {
         text-align: right;

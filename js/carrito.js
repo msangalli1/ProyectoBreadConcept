@@ -211,7 +211,8 @@ class Carrito {
 
         document.getElementById('subtotal').innerHTML = "$ " + subtotal;
         document.getElementById('igv').innerHTML = "$ " + igv;
-        document.getElementById('total').value = "$ " + total.toFixed(2);
+        document.getElementById('total').innerHTML = "$ " + total.toFixed(2); 
+        // ACA MODIFIQUE
     }
 
     obtenerEvento(e) {
