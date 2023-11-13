@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" tema="light">
 
-
-<!-- PAGINA PRESENTACIION -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,67 +12,71 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>BreadConcept | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>BreadConcept | Contacto</title>
 </head>
+
 
 <body>
     <nav class="nav-inicio">
-      <div class="navdiv">
-        <a style="display: flex;" href="index.html"><img src="img/logobeer.png" alt="" height="70px"></a>
-        <div class="labeldiv">
-            <input type="checkbox" id="menu">
-            <label for="menu" class="ocultar-div"> ☰ </label>
-            <ul class="lista">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="mision.html">Misión</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a class="activo" href="contacto.html">Contacto</a></li>
-            </ul>
+        <div class="navdiv">
+            <a style="display: flex;" href="index.html"><img src="img/logobeer.png" alt="" height="70px"></a>
+            <div class="labeldiv">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="ocultar-div"> ☰ </label>
+                <ul class="lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mision.html">Misión</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a class="activo"  href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
+
     <div class="fondo">
 
-    <main class="main-inicio">
-        <section class="seccion-inicio">
-            <div class="titulo">
-                <h1>Datos del equipo</h1>
-            </div>
-            <div class="datos-inicio">
-                <ul>
-                    <li><b>Equipo: </b>7</li>
-                    <li><b>Nombre del equipo: </b>BreadConcept</li>
-                    <li><b>Materia: </b>Diseño y desarrollo web</li>
-                    <li><b>Docente: </b>Litovicius Patricia Carina</li>
-                </ul>
-                <img src="img/pan-de-cerveza.jpg" alt="" height="250px">
-            </div>
-        </div>
-        </section>
-    </main>
-    <footer>
-      <div >
-        <ul>
-          <ul>Mauro Sangalli</ul>
-          <ul>Daniel Borini</ul>
-          <ul>Adrian Gomez</ul>  
-        </ul>
-      </div>
-      <div>
-        <a href="https://msangalli1.github.io/G7TeamRepo/">Sitio de grupo</a>
-      </div>
-      <div>
-        <a>Trabajo grupal.</a>
-      </div>
-      <div>
-        <a>Materia: Diseño y desarrollo web</a>
-      </div>
-      <div>
-        <img src="./img/logouade.png" alt="Logo UADE">
-      </div>
-  </footer>
+
+    <form id="contactForm">
+        <label class="formulario-label" for="nombre">Nombre:</label>
+        <input type="text" class="formulario-label" id="name" name="name" required>
     
-    <script src="codigo.js"></script>
+        <label class="formulario-label" for="email">Correo de contacto:</label>
+        <input type="email" class="formulario-label" id="email" name="email" required>
+    
+        <label class="formulario-label" for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button type="button" onclick="validateAndSubmit()">Enviar</button>
+    </form>
+    
+    </div>
+    
+    <script src="formulario.js"></script>
+    <footer>
+        <div >
+          <ul>
+            <ul>Mauro Sangalli</ul>
+            <ul>Daniel Borini</ul>
+            <ul>Adrian Gomez</ul>  
+          </ul>
+        </div>
+        <div>
+          <a href="https://msangalli1.github.io/G7TeamRepo/">Sitio de grupo</a>
+        </div>
+        <div>
+          <a>Trabajo grupal.</a>
+        </div>
+        <div>
+          <a>Materia: Diseño y desarrollo web</a>
+        </div>
+        <div>
+          <img src="./img/logouade.png" alt="Logo UADE">
+        </div>
+    </footer>
+  
+  
 </body>
 
 </html>
