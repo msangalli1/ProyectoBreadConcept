@@ -1,32 +1,32 @@
 [
 	{
 		"id": 1,
-		"marca": "CERVEZA LAGGER",
+		"marca": "LAGGER",
 		"imagen": "img/productos/lagger.png",
 		"precio": "1000"
 		},
 	{
 		"id": 2,
-		"marca": "CERVEZA IPA",
+		"marca": "IPA",
 		"imagen": "img/productos/ipa.png",
 		"precio": "1000"
 	},
 	{
 		"id": 3,
-		"marca": "CERVEZA ROJA",
+		"marca": "ROJA",
 		"imagen": "img/productos/roja.png",
 		"precio": "1000"
 	},
 	{
 		"id": 4,
-		"marca": "CERVEZA STOUT",
+		"marca": "STOUT",
 		"imagen": "img/productos/stout.png",
 		"precio": "1000"
 	},
 	{
 		"id": 5,
 		"marca": "PACK",
-		"imagen": "img/productos/pack.png",
+		"imagen": "img/productos/roja.png",
 		"precio": "5500"
 	},
 	{
@@ -37,20 +37,20 @@
 	},
 	{
 		"id": 7,
-		"marca": "VASO CERVEZA 1",
+		"marca": "VASO I",
 		"imagen": "img/productos/vasocerv1.png",
 		"precio": "2500"
 	},
 	{
 		"id": 8,
-		"marca": "VASO CERVEZA 2",
+		"marca": "VASO II",
 		"imagen": "img/productos/vasocerv2.png",
 		"precio": "2500"
 	},
 	{
 		"id": 9,
 		"marca": "COPON",
-		"imagen": "img/productos/copon.png",
+		"imagen": "img/productos/pack.png",
 		"precio": "3000"
 	}
 ]
