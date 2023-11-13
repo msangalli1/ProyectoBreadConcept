@@ -897,3 +897,68 @@ p.author a {
     color: #fff;
     font-size: larger;
 }
+
+@media (max-width: 600px) {
+    /* Estilos para pantallas de hasta 600px de ancho */
+
+    /* Ajustes generales */
+    body {
+        font-size: 14px;
+    }
+
+    /* Estilos de imágenes responsivas */
+    .img-mision {
+        max-width: 100%;
+    }
+
+    .img-mision2 {
+        max-width: 100%;
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 15px; /* Ajusta según sea necesario */
+    }
+
+    /* Estilos para secciones responsivas */
+    .seccion-mision,
+    .seccion-inicio,
+    .seccion-propuesta,
+    .seccion-avances,
+    .seccion-avances2,
+    .seccion-2,
+    .seccion-inicio2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Estilos para el menú de navegación en dispositivos móviles */
+    .navdiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navdiv ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navdiv ul li {
+        margin: 10px 0;
+    }
+
+    .navdiv ul li a {
+        padding: 10px;
+    }
+    .ocultar-div{
+        display: block;
+    }
+    
+    .carro{
+        color: white;
+        display: table-caption;
+    }
+    /* Otros estilos específicos para dispositivos móviles */
+    /* ... */
+}
