@@ -1,3 +1,41 @@
+/* CSS para imágenes responsivas */
+.img-mision {
+    max-width: 60%;
+    height: auto;
+    display: block; /* Para evitar espacio adicional alrededor de las imágenes */
+    margin: 0 auto; /* Centrar las imágenes */
+    
+}
+
+/* Para hacer las secciones más responsivas */
+.seccion-mision {
+    padding: 20px; /* Agregar espacio alrededor del contenido */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo básico para la página */
+/* Puedes agregar más estilos según tus necesidades */
+body {
+    font-family: 'Poppins', sans-serif; /* Utiliza la fuente de Google Fonts */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del menú de navegación */
+/* Ajusta según tus necesidades */
+/* ... */
+
+/* Estilos del footer */
+/* Ajusta según tus necesidades */
+/* ... */
+
+
+
+
+
+
+
+
 .error {
     border: 2px solid red; /* Cambia el borde a rojo en caso de error */
   }
@@ -179,6 +217,8 @@ body {
     margin-bottom: opx;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .fondo2 {
     background-image: url(../img/fondon3.jpg);
@@ -190,6 +230,8 @@ body {
     margin-bottom: opx;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .navdiv ul {
@@ -283,15 +325,7 @@ label {
     display: none;
 }
 
-.img-mision {
-    max-width: 450px;
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000; /* Un valor alto para garantizar que esté encima de otros elementos */
-    width: 100%;
-  }
+
   .img-mision2 {
     max-width: 450px;
     position: absolute;
@@ -302,9 +336,7 @@ label {
     width: 100%;
   }
   
-  .seccion-mision {
-    padding-top: 300px; /* Agrega padding al inicio de la sección para compensar la imagen */
-  }
+  
   
 
 
@@ -312,7 +344,7 @@ label {
     margin: 0 auto;
     background-color: #FF9B50;
     height: auto;
-    width: 800px;
+    width: 70%;
     border-radius: 20px;
     padding: 40px 80px;
     overflow: auto;
